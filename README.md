@@ -1,3 +1,14 @@
+## Build status:
+
+ **[CircleCI](https://circleci.com/gh/LeoRedin/star-wars-movies)**
+
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/LeoRedin/star-wars-movies/master?style=for-the-badge)
+
+![CircleCI](https://img.shields.io/circleci/build/gh/LeoRedin/star-wars-movies/master?style=for-the-badge)
+
+![GitHub All Releases](https://img.shields.io/github/downloads/LeoRedin/star-wars-movies/total?style=for-the-badge)
+
+
 ## About this project
 
 This is a simple Star Wars Movies website, where you can check all the movies available as of today(05/02/2020). Consuming the following api : https://swapi.co/ to get almost all the data. I used almost all information about the movies, such as the name, an intro, director and producers and 5 of the main characters available for each movie.
