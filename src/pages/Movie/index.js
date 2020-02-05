@@ -18,10 +18,6 @@ import {
   Producer,
   ReleaseDate,
   CharactersWrapper,
-  StarshipsWrapper,
-  Starship,
-  Avatar,
-  Name,
   Image,
 } from './styles';
 
@@ -80,7 +76,6 @@ const Movie = ({
     producer,
     release_date,
     characters,
-    starships,
   } = movieInfo;
 
   return loading ? (
@@ -104,18 +99,6 @@ const Movie = ({
                 ))
               : null}
           </CharactersWrapper>
-          <StarshipsWrapper>
-            {starships
-              ? starships.map(starship => (
-                  <Starship key={starship}>
-                    <>
-                      <Avatar />
-                      <Name>Death Star</Name>
-                    </>
-                  </Starship>
-                ))
-              : null}
-          </StarshipsWrapper>
         </MovieDetails>
       </ContentWrapper>
     </Container>
