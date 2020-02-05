@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Container, Image } from './styles';
 
-import logo from '~/assets/logo/logo.png';
+import logo from '../../assets/logo/logo.png';
 
 const Spinner = () => (
   <Container>
-    <Image src={logo} />
+    <Image data-testid="logo" src={logo} />
   </Container>
 );
 
