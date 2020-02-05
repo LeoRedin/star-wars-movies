@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 
 import Spinner from '../../../components/Spinner';
 
-describe('header component', () => {
+describe('spinner component', () => {
   test('should have a logo into component', () => {
     const { getByTestId } = render(
       <MemoryRouter>

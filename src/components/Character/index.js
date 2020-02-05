@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Container, Avatar, Name } from './styles';
 
-import getCharacter from '~/utils/getCharacter';
+import getCharacter from '../../utils/getCharacter';
 
 const Character = ({ characterId }) => {
   const [avatar, setAvatar] = useState(null);
@@ -26,8 +26,8 @@ const Character = ({ characterId }) => {
 
   return (
     <Container>
-      <Avatar avatar={avatar} size={size} />
-      <Name>{name}</Name>
+      <Avatar avatar={avatar} size={size} data-testid="avatar" />
+      <Name data-testid="character-name">{name}</Name>
     </Container>
   );
 };

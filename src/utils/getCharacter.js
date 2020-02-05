@@ -1,4 +1,4 @@
-import characters from '~/assets/characters/characters.png';
+import characters from '../assets/characters/characters.png';
 
 export default function getCharacter(characterId) {
   const icons = {
