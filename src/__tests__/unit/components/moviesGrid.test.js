@@ -55,5 +55,6 @@ describe('movies grid component', () => {
     );
 
     expect(movies).toBeTruthy();
+    expect(movies.childNodes.length).toEqual(1);
   });
 });
