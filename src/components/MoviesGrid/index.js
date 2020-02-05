@@ -14,12 +14,12 @@ import {
   Image,
 } from './styles';
 
-import Spinner from '~/components/Spinner';
+import Spinner from '../Spinner';
 
-import getMovieImage from '~/utils/getMovieImage';
-import getMovieLink from '~/utils/getMovieLink';
+import getMovieImage from '../../utils/getMovieImage';
+import getMovieLink from '../../utils/getMovieLink';
 
-import api from '~/services/api';
+import api from '../../services/api';
 
 const MoviesGrid = () => {
   const [loading, setLoading] = useState(true);
@@ -40,10 +40,10 @@ const MoviesGrid = () => {
     getMovies();
   }, []);
   return loading ? (
-    <Spinner />
+    <Spinner data-testid="logo" />
   ) : (
     <Container>
-      <Movies>
+      <Movies data-testid="movies">
         {movies.map(movie => (
           <Movie key={movie.url}>
             <Cover>

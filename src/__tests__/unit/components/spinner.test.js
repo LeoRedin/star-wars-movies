@@ -7,13 +7,13 @@ import Spinner from '../../../components/Spinner';
 
 describe('spinner component', () => {
   test('should have a logo into component', () => {
-    const { getByTestId } = render(
+    const { container } = render(
       <MemoryRouter>
         <Spinner />
       </MemoryRouter>
     );
 
-    const logo = getByTestId('logo');
+    const logo = container.querySelector('img[data-testid="logo"]');
 
     expect(logo).toBeTruthy();
   });
