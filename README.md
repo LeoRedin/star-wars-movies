@@ -21,6 +21,7 @@ This is a simple Star Wars Movies website, where you can check all the movies av
 - Testing-library
 - PropTypes
 - Styled Components
+- Node > 10.0
 
 ## Available Scripts
 
